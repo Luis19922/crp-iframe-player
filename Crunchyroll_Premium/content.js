@@ -99,7 +99,7 @@ function importBetaPlayer(ready = false) {
   if (!ep) { window.location.reload(); return; }
   var series_slug = ep.parentSlug
   var external_id = getExternalId(ep.id).substr(4)
-  var old_url = `https://static.crunchyroll.com/vilos-v2/web/vilos/${external_lang}/${series_slug}/episode-${external_id}`
+  var old_url = `https://www.crunchyroll.com/watch${external_lang}/${series_slug}/episode-${external_id}`
   var up_next = document.querySelector('[data-t="next-episode"] > a')
   var playback = ep.playback
   var series = document.querySelector('.show-title-link > h4')?.innerText;
